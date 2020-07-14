@@ -65,12 +65,12 @@ static editContact(el){
       const email_data = email.innerHTML;
       const address_data = address.innerHTML;
 
-      name.innerHTML="<input type='text' pattern='[A-Za-z]+' title='Only letters allowed.' id='tb_name"+contact_rows.rowIndex+"' value='"+name_data+"' required>";
-      surname.innerHTML = "<input type='text' id='tb_surname"+contact_rows.rowIndex+"' value='"+surname_data+"'>";
+      name.innerHTML="<input type='text' pattern='[A-Za-z]+' maxlength='35' title='Only letters allowed.' id='tb_name"+contact_rows.rowIndex+"' value='"+name_data+"' required>";
+      surname.innerHTML = "<input type='text' maxlength='35' id='tb_surname"+contact_rows.rowIndex+"' value='"+surname_data+"'>";
       birth.innerHTML = "<input type='date' id='tb_birth"+contact_rows.rowIndex+"' value='"+birth_data+"'>";
-      number.innerHTML = "<input type='tel' id='tb_number"+contact_rows.rowIndex+"' value='"+number_data+"'>";
-      email.innerHTML = "<input type='email' id='tb_email"+contact_rows.rowIndex+"' value='"+email_data+"'>";
-      address.innerHTML = "<input type='address' id='tb_address"+contact_rows.rowIndex+"' value='"+address_data+"'>";
+      number.innerHTML = "<input type='tel' maxlength='15' id='tb_number"+contact_rows.rowIndex+"' value='"+number_data+"'>";
+      email.innerHTML = "<input type='email' maxlength='254' id='tb_email"+contact_rows.rowIndex+"' value='"+email_data+"'>";
+      address.innerHTML = "<input type='address' maxlength='95' id='tb_address"+contact_rows.rowIndex+"' value='"+address_data+"'>";
 
     }
   }
