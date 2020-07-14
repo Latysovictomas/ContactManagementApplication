@@ -1,4 +1,4 @@
-# ContactManagementApplication
+# Contact Management Application
 
 This is a single page contact management application using HTML, JavaScript, and CSS without any external libraries.
 
