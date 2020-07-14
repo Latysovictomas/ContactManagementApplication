@@ -1,0 +1,93 @@
+* {box-sizing: border-box}
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Changing input fields */
+input[type=text], input[type=date], input[type=email], input[type=tel], input[type=address]{
+  min-width:100px;
+  width: 100%; /* 200px or 100% */
+  padding: 10px;
+  margin: 5px 0 5px 5;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=date]{
+	padding: 7.8px;
+}
+
+input[type=text]:focus, input[type=date]:focus, input[type=email]:focus, input[type=tel]:focus, , input[type=address]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+}
+
+/* Set a style for the add contact button*/
+.pure-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 10px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+
+}
+
+/* Customizing columns*/
+.column {
+  float: left;
+  width: 310px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Customizing Table */
+#contact-table {
+	  margin: -17px;
+
+}
+#contact-table tr:nth-child(even) {
+  background-color: #eee;
+}
+#contact-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+#contact-table th {
+  color: white;
+  background-color: #4CAF50;
+}
+
+
+/* edit/detele button*/
+.delete {
+	color:red;
+	text-decoration:none;
+}
+.edit {
+	text-decoration:none;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyBookList App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2e9c362065.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section id="header">
+      <h1 style="text-align:center">
+        <i class="fas fa-book-open" style="color:#4CAF50;"></i>
+      Contact Management Application</h1>
+    </section>
+
+    <div class="row">
+      <div class="column">
+
+
+        <!--Creating a form to add a contact-->
+            <form action="" id="contact-form">
+                <div class="container">
+                  <h2>Add a contact</h2>
+            <p>Please fill in this form to add a contact.</p>
+        <hr>
+              <fieldset>
+                    <label for="name"><b>Name</b></label><br>
+                    <input type="text" pattern="[A-Za-z]+" title="Only letters allowed." placeholder="Enter Name"
+                    id="name" name="name" required><br>
+                    <label for="surname"><b>Surname</b></label><br>
+                    <input type="text" pattern="[A-Za-z]+" title="Only letters allowed." placeholder="Enter Surname"
+                    id="surname" name="surname" required><br>
+                    <label for="birth"><b>Date of birth</b></label><br>
+                    <input type="date" placeholder="Enter Date of Birth"
+                    id="birth" name="birth"required><br>
+                    <label for="phone"><b>Phone number</b></label><br>
+                    <input type="tel" pattern="[0-9]+" title="Only numbers allowed." placeholder="Enter Phone Number"
+                    id="phone" required><br>
+                    <label for="email"><b>E-mail</b></label><br>
+                    <input type="email" placeholder="Enter E-mail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="E-mail must be in the following order: characters@characters.domain"
+                    id="email" required><br>
+                    <label for="address"><b>Address</b></label><br>
+                    <input type="text" placeholder="Enter Address" id="address"><br>
+                </fieldset>
+              </hr>
+
+                    <button type="submit" class="pure-button">Add a contact</button>
+
+                </div>
+            </form>
+      </div>
+
+
+      <!--Creating a table like contact book-->
+      <div class="column"></div>
+
+      <table id="contact-table" class="center">
+
+        <div class="container">
+        <h2>Contact table</h2>
+  <p>View and edit contact table.</p>
+<hr>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Date of birth</th>
+        <th>Phone number</th>
+        <th>E-mail</th>
+        <th>Address</th>
+        <th></th> <!--edit button-->
+        <th></th> <!--save button-->
+        <th></th> <!--delete button-->
+      </tr>
+
+  <tbody id="contact-list">
+  </tbody>
+</hr>
+</div>
+      </table>
+
+    </div> <!--end of row-->
+
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
