@@ -23,4 +23,4 @@ Details:
 * App uses localStorage and JSON to store the data
 * App uses appropriate HTML input types to help with validation
 * The code is clean and commented
-* Very long text in the input field handled.
+* Very long text in the input field handled
