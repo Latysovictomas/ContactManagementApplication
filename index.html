@@ -28,24 +28,24 @@
         <hr>
               <fieldset>
                     <label for="name"><b>Name</b></label><br>
-                    <input type="text" pattern="[A-Za-z]+" title="Only letters allowed." placeholder="Enter Name"
+                    <input type="text" pattern="[A-Za-z]+" maxlength="35" title="Only letters allowed." placeholder="Enter Name"
                     id="name" name="name" required><br>
                     <label for="surname"><b>Surname</b></label><br>
-                    <input type="text" pattern="[A-Za-z]+" title="Only letters allowed." placeholder="Enter Surname"
+                    <input type="text" pattern="[A-Za-z]+" maxlength="35" title="Only letters allowed." placeholder="Enter Surname"
                     id="surname" name="surname" required><br>
                     <label for="birth"><b>Date of birth</b></label><br>
                     <input type="date" placeholder="Enter Date of Birth"
                     id="birth" name="birth"required><br>
                     <label for="phone"><b>Phone number</b></label><br>
-                    <input type="tel" pattern="[0-9]+" title="Only numbers allowed." placeholder="Enter Phone Number"
+                    <input type="tel" pattern="[0-9]+" maxlength="15" title="Only numbers allowed." placeholder="Enter Phone Number"
                     id="phone" required><br>
                     <label for="email"><b>E-mail</b></label><br>
                     <input type="email" placeholder="Enter E-mail"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="254"
                     title="E-mail must be in the following order: characters@characters.domain"
                     id="email" required><br>
                     <label for="address"><b>Address</b></label><br>
-                    <input type="text" placeholder="Enter Address" id="address"><br>
+                    <input type="text" maxlength="95" placeholder="Enter Address" id="address"><br>
                 </fieldset>
               </hr>
 
